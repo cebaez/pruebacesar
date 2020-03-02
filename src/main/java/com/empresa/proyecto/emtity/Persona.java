@@ -18,13 +18,13 @@ public class Persona {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "MY_SEQ_PERSONA")
-	@SequenceGenerator(name = "MY_SEQ_PERSONA", sequenceName = "SEQPERSONA")
+	@SequenceGenerator(name = "MY_SEQ_PERSONA", sequenceName = "SEQPERSONA",allocationSize = 1)
 	private int id;
 	
 	@Column(name = "DNI", length = 10)
 	private String dni;
 	
-	@Column(name = "NOBRE", length = 50)
+	@Column(name = "NOMBRE", length = 50)
 	private String nombre;
 	
 	@Column(name = "APELLIDO_PATERNO", length = 50)
